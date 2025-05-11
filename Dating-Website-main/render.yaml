@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: frendate-service
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn frendate.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: frendate.settings
+      - key: DB_NAME
+        value: frendate_db
+      - key: DB_USER
+        value: frendate_user
+      - key: DB_PASSWORD
+        value: securepassword123
+      - key: DB_HOST
+        fromDatabase:
+          name: frendate-db
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: frendate-db
+          property: port
+
+databases:
+  - name: frendate-db
+    databaseName: frendate_db
+    user: frendate_user
+    password: securepassword123
+    plan: starter
+    region: oregon
