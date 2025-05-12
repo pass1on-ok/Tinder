@@ -13,26 +13,3 @@ Translation to French
 Recommendation system for dating
 Adding profiles to Favorites
 
-# Installation Steps
-
-1. Clone the repository: ```cd Dating-Website```
-  
-2. Create Python virtual environment: ```python3 -m venv venv```
-  
-3. Activate a Python virtual environment and install dependencies:  
-
-    > (MacOS/Unix)<br>
-    ```source venv/bin/activate```  
-    ```pip3 install -r requirements.txt```
-      
-    > (Windows)<br>
-    ```venv\Scripts\activate.bat```  
-    ```pip3 install -r requirements.txt```
-  
-4. Create a database, by running the command:  
-   ```python3 manage.py migrate```  
-    
-5. Run the server:
-   ```python3 manage.py runserver```  
-  
-6. Open your browser and go to http://localhost:8000/
