@@ -1,6 +1,6 @@
-# Tinder Clone
+# DATE
 
-# Frendate - Dating Website
+# DATE - Dating Website
 The dating website project developed on Django is a powerful and reliable tool for people who are 
 looking for their significant other. The website provides a high degree of personalization, 
 security, and performance, making it an ideal choice for anyone who wants to find love online.
